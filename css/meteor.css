@@ -1,0 +1,18 @@
+@-webkit-keyframes fallingDown {
+	from {
+	}
+
+	to {
+		top: 120%;
+	}
+}
+
+.meteorController {
+	position: absolute;
+	top: -60px;
+	animation-name: fallingDown;
+	animation-duration: 2s;
+	-webkit-animation-name: fallingDown;
+	-webkit-animation-duration: 2s;
+	width: 70px;
+}

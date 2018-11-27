@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Asteroids</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estrela.css">
+	<link rel="stylesheet" href="css/nave.css">
+	<link rel="stylesheet" href="css/shot.css">
+	<link rel="stylesheet" href="css/meteor.css">
+	<link rel="stylesheet" href="css/score.css">
+</head>
+<body>
+	<div id="tela_inicial">
+
+		<div id="fundo_stars"></div>
+		
+		<div id="op_jogo">
+			<h1 class="opcoes" id="init">Iniciar Jogo Solo</h1>
+			<h1 class="opcoes">Modo Multiplayer</h1>
+			<h1 class="opcoes" onclick="window.location.href='creditos.html';">Creditos</a> 
+		</div>
+		
+		<div id="palco">
+			<div class="score" id="scoreDistance"></div>
+			<div class="score" id="scoreMeteor"></div>
+			<div id="barra_energia">
+				<img src="img/barras/disparoLv1.png" width="200" id="barraEnergia">
+			</div>
+
+			<div id="barra_vida">
+				<img src="img/barras/disparoLv5.png" width="200" id="barraVida">
+			</div>
+		</div>
+
+	</div>
+
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/controller/clsEstrelas.js"></script>
+	<script src="scripts/estrelas.js"></script>
+	<script src="scripts/controller/clsPlanetas.js"></script>
+	<script src="scripts/planetas.js"></script>
+	<script src="scripts/controller/clsSettings.js"></script>
+	<script src="scripts/settings.js"></script>
+	<script src="scripts/controller/clsNave.js"></script>
+	<script src="scripts/nave.js"></script>
+	<script src="scripts/animateNave.js"></script>
+	<script src="scripts/controller/clsDisparo.js"></script>
+	<script src="scripts/disparo.js"></script>
+	<script src="scripts/controller/clsMeteor.js"></script>
+	<script src="scripts/controller/clsPontuacao.js"></script>
+	<script src="scripts/score.js"></script>
+	<script src="scripts/controller/clsBuffs.js"></script>
+	<script src="scripts/buffs.js"></script>
+
+	<script>
+		let meteor = document.createElement('script');
+		meteor.src = 'scripts/meteor.js';
+
+		document.querySelector("#init").onclick = function() {
+			setTimeout(() => {
+				document.body.appendChild(meteor);
+			}, 6000);
+		}
+		
+	</script>
+</body>
+</html>

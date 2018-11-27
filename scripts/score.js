@@ -1,0 +1,1 @@
+let initPontuacao = new clsPontuacao();

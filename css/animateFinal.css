@@ -1,0 +1,21 @@
+@-webkit-keyframes saida {
+	from {
+		top: 80%;
+		left: 50%;
+		width: 70px;
+	}
+
+	to {
+		top: -10%;
+		left: 50%;
+		width: 0px;
+	}
+}
+
+#controllerNave {
+	top: -10%;
+	left: 50%;
+	width: 0px;
+	-webkit-animation-name: saida;
+	-webkit-animation-duration: 20s;
+}

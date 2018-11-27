@@ -1,0 +1,25 @@
+@-webkit-keyframes animateShot {
+    from {
+
+    }
+
+    to {
+        top: -30%;
+    }
+}
+
+.disparo {
+    position: absolute;
+    -webkit-animation-name: animateShot;
+    -webkit-animation-duration: 2s;
+    animation-name: animateShot;
+    animation-duration: 1s;
+    top: -30%;
+}
+
+#barra_energia {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    transition: 2s all;
+}

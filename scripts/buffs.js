@@ -1,0 +1,1 @@
+let initbufff = new clsBuffs();

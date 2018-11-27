@@ -1,0 +1,1 @@
+let initSettings = new clsSettings();

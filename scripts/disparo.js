@@ -1,0 +1,1 @@
+let initDisparo = new clsDisparo();

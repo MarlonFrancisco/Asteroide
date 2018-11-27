@@ -1,0 +1,32 @@
+div#palco {
+	width: 100%;
+	height: 100%;
+}
+
+@-webkit-keyframes entrada {
+	from {
+		top: -15%;
+		left: 0;
+	}
+
+	to {
+		top: 80%;
+		left: 50%;
+	}
+}
+
+#controllerNave {
+	width: 70px;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	-webkit-animation-name: entrada;
+	-webkit-animation-duration: 6s;
+	transition: .5s all;
+}
+
+#barra_vida {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}

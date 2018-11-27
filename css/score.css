@@ -1,0 +1,13 @@
+.score {
+	color: white;
+	position: absolute;
+	font-size: 18px;
+	padding: 10px;
+}
+
+#scoreDistance {
+	left: 0;
+}
+#scoreMeteor {
+	right: 0;
+}

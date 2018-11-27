@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Asteroids</title>
+
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/estrela.css">
+	<link rel="stylesheet" href="css/creditos.css">
+	<link rel="stylesheet" href="css/nave.css">
+</head>
+<body>
+	<div id="tela_inicial">
+
+		<div id="fundo_stars"></div>
+		<div id="palco"></div>
+		
+		<div id="creditos">
+			<ul>
+				<li>Programador: Marlon Francisco</li>
+				<li>Design: Marlon Francisco</li>
+				<li>Analista: Marlon Francisco</li>
+				<li>Idealizadores: Marlon Francisco e Peterson Fonseca</li>
+				<li>Design auxiliar: Peterson Fonseca</li>
+				<li>Linguagem de programação: JavaScript</li>
+				<li>Animacões: CSS e JavaScript</li>
+				<li>Ferramentas ultilizadas:<br>Sublime Text<br>Photoshop<br>Jquery<br>HTML<br>CSS</li>
+				<li>Musica: GO - FLOW (Naruto Opening 4) </li>
+				<li>
+					Agradecimentos:<br>
+					<br>Ao Peterson por ter me feito a nave kk sz!<br>
+					<br>A todos que me motivaram a terminar esse jogo!<br>
+					<br>Aos professores da Etec pelo aprendizado dado!<br>
+					<br>Ao Brendan Eich criador do JavaScript<br>
+					<br>A W3C & WHATWG pelo desenvolvimento do HTML<br>
+					<br>A World Wide Web Consortium Pelo desenvolvimento do css<br>
+					<br>A John Resig Pela criação da biblioteca JQuery<br>
+					<br>A Adobe Systems pelo desenvolvimento do Photoshop<br>
+					<br>A todo 3ºO Informatica P/ Internet<br>
+					<br>A todo 1ºE Desenvolvimento de sistemas<br>
+					<br>Ao Damião pela motivação<br>
+					<br>Ao Willian pelos testes feitos<br>
+					<br>Ao Lucas pelas criticas contrutivas<br>
+					<br>Novamente ao Peterson por termos a ideia de fazer esse jogo<br>
+					<br>Ao mano Tirica sz, larga ela men<br>
+					<br>A Professora Rosa por ter me ensinado logica sz<br>
+					<br>Ao Deyverson por ter me ensinado a usar as ferramentas da Adobe<br>
+					<br>Ao Renato e a Rosa por ensinarem essa linda linguagem JS<br>
+					<br>Ao Cleiton por ter me ensinado modelagem de banco e SQL, pretendo ultilizar no jogo futuramente<br>
+					<br>Ao Marcelo DelaTorre pelo aprendizado em PHP, tambem usarei mais tarde<br>
+					<br>Ao Marcelo PB pelo aprendizado em redes, modo online me espera</li>
+				</li>
+			</ul>
+		</div>
+
+
+	</div>
+	
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/controller/clsEstrelas.js"></script>
+	<script src="scripts/estrelas.js"></script>
+	<script src="scripts/controller/clsNave.js"></script>
+	<script src="scripts/nave.js"></script>
+	<script src="scripts/animateNave.js"></script>
+	<script src="scripts/controller/clsPlanetas.js"></script>
+	<script src="scripts/planetas.js"></script>
+	<script>
+		$(document).ready(function() {
+			sessionStorage.setItem('init', 'true');
+
+			setTimeout(() => {
+				animacaoFinal();
+			}, 70000);
+
+			function animacaoFinal() {
+				let animate = document.createElement('link');
+				animate.href= "css/animateFinal.css";
+				animate.rel = "stylesheet";
+
+				document.body.appendChild(animate);
+
+				setTimeout(() => {
+					window.location.href = "index.html";
+				}, 22000);
+			}
+		});
+
+	</script>
+
+
+	<embed src="op1.mp3" hidden="true" loop="infinite" autostart="TRUE">
+</body>
+</html>

@@ -1,0 +1,1 @@
+let initNave = new clsNave();

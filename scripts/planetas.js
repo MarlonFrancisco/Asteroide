@@ -1,0 +1,1 @@
+let initPlanetas = new clsPlanetas();
